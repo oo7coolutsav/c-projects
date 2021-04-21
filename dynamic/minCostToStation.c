@@ -27,7 +27,7 @@ int cost[MAX][MAX] = {
     {-1,-1,-1,-1,-1,-1,-1,0}
 };
 
-int calculateMinimumCost(int s,int d){/* condition */
+int calculateMinimumCost(int s,int d){
     if(s == d || s== d-1){ return cost[s][d];}
     int minimumCost = cost[s][d];
     for (int i = s+1 ; i < d; i++)
